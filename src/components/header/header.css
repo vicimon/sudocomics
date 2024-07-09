@@ -6,7 +6,7 @@
 
 .header {
   /* background: linear-gradient(95deg, #5d0e41, #a0153e); */
-  border-bottom: 3px solid yellow;
+  border-bottom: 3px solid #ffff00;
   background-color: #0c0c0c;
   display: flex;
   justify-content: space-between;
@@ -18,8 +18,16 @@
 
 #logo {
   margin-left: 20px;
-  width: 80px;
+  width: 60px;
+  cursor: pointer;
   -webkit-user-drag: none;
+  transition: 0.5s;
+}
+
+#logo:hover {
+  transition: 0.5s;
+  transform: rotate(45deg);
+  filter: drop-shadow(0 0 50px #ff0);
 }
 
 input {

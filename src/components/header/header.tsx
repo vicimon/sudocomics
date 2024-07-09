@@ -1,6 +1,6 @@
 import FeatherIcon from "feather-icons-react";
 import "./header.css";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo.webp";
 
 export default function Header() {
   return (
