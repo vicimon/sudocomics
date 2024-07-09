@@ -13,13 +13,7 @@ export default function Header() {
       </div>
       <div className="botoes">
         <div className="icon">
-          <FeatherIcon icon="box" />
-        </div>
-        <div className="icon">
-          <FeatherIcon icon="maximize" />
-        </div>
-        <div className="icon">
-          <FeatherIcon icon="user" />
+          <FeatherIcon icon="menu" />
         </div>
       </div>
     </div>

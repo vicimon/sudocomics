@@ -6,6 +6,7 @@
 
 .header {
   /* background: linear-gradient(95deg, #5d0e41, #a0153e); */
+  border-bottom: 3px solid yellow;
   background-color: #0c0c0c;
   display: flex;
   justify-content: space-between;
@@ -16,7 +17,9 @@
 }
 
 #logo {
+  margin-left: 20px;
   width: 80px;
+  -webkit-user-drag: none;
 }
 
 input {
@@ -42,8 +45,7 @@ input::placeholder {
 }
 
 .botoes {
-  display: flex;
-  gap: 3rem;
+  margin-right: 20px;
 }
 
 svg {

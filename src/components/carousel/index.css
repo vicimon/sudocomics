@@ -3,6 +3,7 @@
   /* gap: 1rem; */
   height: fit-content;
   padding: 0 50px;
+  user-select: none;
 }
 
 .XLsqr {
@@ -32,6 +33,7 @@
   width: 90%;
   height: 90%;
   z-index: 10;
+  -webkit-user-drag: none;
 }
 
 .Ssqrs {
@@ -57,4 +59,5 @@
   width: 314px;
   height: 200px;
   z-index: 10;
+  -webkit-user-drag: none;
 }
