@@ -1,3 +1,6 @@
+// Import de bibliotecas
+import { Link } from "react-router-dom";
+
 import "./index.css";
 
 export default function Footer() {
@@ -5,7 +8,9 @@ export default function Footer() {
     <div id="foo-wrapper">
       <div className="left">
         <div className="app-logo">
-          <h3>Sudo-Comics</h3>
+          <Link to="/" style={{ textDecoration: "none", color: "#000" }}>
+            <h3>Sudo-Comics</h3>
+          </Link>
         </div>
         <p>
           Leia seus quadrinhos e mangás favoritos com o <span>Sudo Comics</span>

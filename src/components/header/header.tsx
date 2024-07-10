@@ -1,12 +1,20 @@
+// Importações Bibliotecas
 import FeatherIcon from "feather-icons-react";
+import { Link } from "react-router-dom";
+
+// Importações CSS
 import "./header.css";
+
+// Importações Imagens
 import logo from "../../images/logo.webp";
 
 export default function Header() {
   return (
     <div className="header">
       <div>
-        <img id="logo" src={logo} alt="" />
+        <Link to="/">
+          <img id="logo" src={logo} alt="" />
+        </Link>
       </div>
       <div>
         <input type="text" placeholder="Pesquisar" />
