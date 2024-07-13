@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
+.head_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   /* background: linear-gradient(95deg, #5d0e41, #a0153e); */
-  border-bottom: 3px solid #ffff00;
   background-color: #0c0c0c;
   display: flex;
   justify-content: space-between;
@@ -14,6 +18,14 @@
   padding: 1rem;
   align-items: center;
   width: 100vw;
+}
+
+.head_tape {
+  height: 20px;
+  width: 100%;
+  background-size: 20%;
+  background-image: url(../../images/tape.png);
+  animation: tape 20s linear infinite;
 }
 
 #logo {
@@ -80,4 +92,13 @@ svg {
   cursor: pointer;
   width: 50px;
   height: 50px;
+}
+
+@keyframes tape {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
