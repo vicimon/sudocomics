@@ -3,7 +3,7 @@ import FeatherIcon from "feather-icons-react";
 import { Link } from "react-router-dom";
 
 // Importações CSS
-import "./header.css";
+import "../../style/App.css";
 
 // Importações Imagens
 import logo from "../../images/logo.webp";

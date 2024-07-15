@@ -39,7 +39,7 @@ body {
   height: 20px;
   width: 100%;
   background-size: 20%;
-  background-image: url(../../images/tape.png);
+  background-image: url(../images/tape.png);
   animation: tape 20s linear infinite;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 input {
-  background: url(../../images/search.png);
+  background: url(../images/search.png);
   background-repeat: no-repeat;
   background-position: 97%;
   height: 45px;
@@ -188,6 +188,7 @@ svg {
 
 #foo_wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 100vw;
   bottom: 0;
@@ -196,16 +197,22 @@ svg {
   /* text-align: center; */
   color: white;
   /* background: linear-gradient(95deg, #5d0e41, #a0153e); */
-  border-top: 3px solid yellow;
   background-color: #0c0c0c;
-  padding: 32px 65px;
 }
 
-#foo_wrapper > * {
+#foo_wrapper {
   display: flex;
   flex-direction: column;
   flex: 1;
   gap: 1rem;
+}
+
+.foo_content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100vw;
+  padding: 32px 65px;
 }
 
 .foo_logo {
