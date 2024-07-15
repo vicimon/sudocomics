@@ -3,11 +3,11 @@ import Footer from "../components/footer";
 import "../style/App.css"
 
 
-export default function Browse() {
+export default function Hqpage() {
   return (
     <div>
       <Header></Header>
-      <h1 className="content">Browse</h1>
+      <h1 className="content">HQ PAGE</h1>
       <Footer></Footer>
     </div>
   );
