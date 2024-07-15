@@ -5,9 +5,9 @@ import "./index.css";
 
 export default function Footer() {
   return (
-    <div id="foo-wrapper">
-      <div className="left">
-        <div className="app-logo">
+    <div id="foo_wrapper">
+      <div className="foo_left">
+        <div className="foo_logo">
           <Link to="/" style={{ textDecoration: "none", color: "#000" }}>
             <h3>Sudo-Comics</h3>
           </Link>
@@ -16,7 +16,7 @@ export default function Footer() {
           Leia seus quadrinhos e mangás favoritos com o <span>Sudo Comics</span>
         </p>
       </div>
-      <div className="right">
+      <div className="foo_right">
         <h3>Aviso Legal</h3>
         <p>
           <span>Sudo Comics</span> não hospeda nenhum arquivo, apenas fornece

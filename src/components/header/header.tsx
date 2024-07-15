@@ -12,17 +12,17 @@ import tape from "../../images/tape.png";
 export default function Header() {
   return (
     <div className="head_wrapper">
-      <div className="header">
+      <div className="head">
         <div>
           <Link to="/">
-            <img id="logo" src={logo} alt="" />
+            <img id="head_logo" src={logo} alt="" />
           </Link>
         </div>
         <div>
           <input type="text" placeholder="Pesquisar" />
         </div>
-        <div className="botoes">
-          <div className="icon">
+        <div className="head_botoes">
+          <div className="head_icon">
             <FeatherIcon icon="menu" />
           </div>
         </div>
