@@ -1,6 +1,6 @@
 body {
-  /* background-color: rgba(255, 32, 77, 0.397); */
-  background: url(../../public/images/bg.webp);
+  background-color: rgb(0, 0, 0);
+  /* background: url(../../public/images/bg.webp); */
   background-size: 100%;
   height: 100vh;
   width: 100vw;
@@ -33,14 +33,6 @@ body {
   padding: 1rem;
   align-items: center;
   width: 100vw;
-}
-
-.head_tape {
-  height: 20px;
-  width: 100%;
-  background-size: 20%;
-  background-image: url(../images/tape.png);
-  animation: tape 20s linear infinite;
 }
 
 #head_logo {
@@ -122,7 +114,9 @@ svg {
 
 #car_wrapper {
   display: flex;
+  justify-content: center;
   /* gap: 1rem; */
+  background-color: #0c0c0c;
   height: fit-content;
   padding: 0 50px;
   user-select: none;
@@ -135,13 +129,13 @@ svg {
   justify-content: center;
   align-items: flex-end;
   height: 100%;
-  flex: 3;
+  flex: 2.5;
 }
 
 .car_XLsqr > span {
   display: block;
   height: 492px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .car_Links {
@@ -249,4 +243,31 @@ p > span {
 
 h3:visited {
   text-decoration: none;
+}
+
+/* Estilo Tape */
+
+.tape {
+  height: 20px;
+  width: 100%;
+  background-size: 20%;
+  background-image: url(../images/tape.png);
+  animation: tape 20s linear infinite;
+}
+
+/* Estilo Home */
+
+.home_content {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+/* Estilo SingleComic */
+
+.sin_container {
+  display: flex;
+  width: 30px;
+  height: 50px;
+  background-color: red;
 }

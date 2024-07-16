@@ -1,12 +1,13 @@
 // Import de bibliotecas
 import { Link } from "react-router-dom";
 
+import Tape from "../tape/tape";
 import "../../style/App.css";
 
 export default function Footer() {
   return (
     <div id="foo_wrapper">
-      <div className="head_tape"></div>
+      <Tape></Tape>
       <div className="foo_content">
         <div className="foo_left">
           <div className="foo_logo">

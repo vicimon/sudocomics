@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 // Importações CSS
 import "../../style/App.css";
 
+// Importações Componentes
+import Tape from "../tape/tape";
+
 // Importações Imagens
 import logo from "../../images/logo.webp";
-import tape from "../../images/tape.png";
 
 export default function Header() {
   return (
@@ -27,7 +29,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="head_tape"> </div>
+      <Tape></Tape>
     </div>
   );
 }
