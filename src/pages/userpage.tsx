@@ -1,6 +1,6 @@
 import Header from "../components/header/header";
 import Footer from "../components/footer";
-import "../style/App.css"
+import "../style/App.css";
 
 export default function Userpage() {
   return (

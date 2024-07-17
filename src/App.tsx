@@ -21,9 +21,9 @@ function App() {
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/userpage" element={<Userpage />} />
 
-        <Route path="/autorpage/:name" element={<Autorpage />} />
-        <Route path="/hqpage/:name" element={<Hqpage />} />
-        <Route path="/editorapage/:name" element={<Editorapage />} />
+        <Route path="/autorpage" element={<Autorpage />} />
+        <Route path="/hqpage" element={<Hqpage />} />
+        <Route path="/editorapage" element={<Editorapage />} />
       </Routes>
     </div>
   );

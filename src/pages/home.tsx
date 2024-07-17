@@ -1,6 +1,6 @@
 // import packages
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // import components
 import Header from "../components/header/header";
@@ -13,11 +13,15 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <Carousel />
-      <Tape></Tape>
-      <div className="home_content">
+      {/* <Tape></Tape> */}
+      <div className="page_content">
+        <Carousel />
         <h1>Novas HQs</h1>
-        <ComicsContainer />
+        <ul>
+          <li>
+            <Link to="/catalogue">Catálogo</Link>
+          </li>
+        </ul>
       </div>
       <Footer />
     </div>

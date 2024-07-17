@@ -2,9 +2,13 @@ body {
   background-color: rgb(0, 0, 0);
   /* background: url(../../public/images/bg.webp); */
   background-size: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100%;
   width: 100vw;
+  margin: 0;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
@@ -20,8 +24,11 @@ body {
 }
 
 .head_wrapper {
+  z-index: 10;
   display: flex;
   flex-direction: column;
+  position: sticky;
+  top: 0;
 }
 
 .head {
@@ -119,6 +126,7 @@ svg {
   background-color: #0c0c0c;
   height: fit-content;
   padding: 0 50px;
+  padding-bottom: 30px;
   user-select: none;
 }
 
@@ -181,24 +189,16 @@ svg {
 /* Footer Style */
 
 #foo_wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100vw;
+  /* position: fixed; */
   bottom: 0;
-  left: 0;
-  right: 0;
-  /* text-align: center; */
   color: white;
-  /* background: linear-gradient(95deg, #5d0e41, #a0153e); */
   background-color: #0c0c0c;
-}
-
-#foo_wrapper {
   display: flex;
   flex-direction: column;
   flex: 1;
   gap: 1rem;
+  /* height: 100px; */
+  /* padding-bottom: 20px; */
 }
 
 .foo_content {
@@ -257,17 +257,18 @@ h3:visited {
 
 /* Estilo Home */
 
-.home_content {
+.page_content {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: white;
+  background-color: #0c0c0c;
+  text-align: center;
 }
 
 /* Estilo SingleComic */
-
-.sin_container {
-  display: flex;
-  width: 30px;
-  height: 50px;
-  background-color: red;
-}
