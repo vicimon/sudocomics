@@ -271,4 +271,33 @@ h3:visited {
   text-align: center;
 }
 
-/* Estilo SingleComic */
+/* Estilo Catalogo/coleção */
+
+.catlog_page{
+  display: flex;
+
+}
+.catlog_content{
+  flex: 5;
+  justify-content: center;
+  flex-direction: column;
+  height: 150px;
+  width: 100px;
+  }
+
+.slider_colecao{
+  display: flex;
+  overflow: hidden;
+}
+.slider_item:hover{
+  transition: 1s;
+  transform: scale(1.5);
+}
+.slider_item{
+  flex-direction: column;
+  flex: 1 1 20px;
+}
+.slider_item_content{
+  color: white;
+
+}

@@ -7,7 +7,6 @@ import Header from "../components/header/header";
 import Carousel from "../components/carousel";
 import Footer from "../components/footer";
 import Tape from "../components/tape/tape";
-import ComicsContainer from "../components/comicsContainer/comicsContainer";
 
 export default function Home() {
   return (
