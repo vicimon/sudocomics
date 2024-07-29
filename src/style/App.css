@@ -273,31 +273,43 @@ h3:visited {
 
 /* Estilo Catalogo/coleção */
 
-.catlog_page{
+.catlog_page {
   display: flex;
-
 }
-.catlog_content{
-  flex: 5;
+.catlog_content {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  height: 150px;
+  color: white;
+  background-color: #0c0c0c;
+  height: 300px;
   width: 100px;
-  }
+}
 
-.slider_colecao{
+.slider_colecao {
+  gap: 2rem;
   display: flex;
-  overflow: hidden;
+  overflow: visible;
+  /* color: white; */
 }
-.slider_item:hover{
-  transition: 1s;
-  transform: scale(1.5);
-}
-.slider_item{
+.slider_item {
+  padding: 10px;
+  display: flex;
+  border: solid 1px white;
+  gap: 1rem;
   flex-direction: column;
+  align-items: center;
   flex: 1 1 20px;
 }
-.slider_item_content{
+.slider_item:hover {
+  flex: auto;
+  transition: 1s;
+  transform: scale(1.2);
+  margin: 0 30px;
+}
+.slider_item_content {
   color: white;
-
 }

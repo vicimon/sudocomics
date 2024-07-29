@@ -8,22 +8,11 @@ export default function Catalogue() {
     <div>
       <Header />
       <h1 className="page_content">CATALOGO</h1>
-        <div className="catlog_page">
-          <div className="catlog_content"><CatlogCollection/></div>
-          <div className="catlog_content"><CatlogCollection/></div>
-          <div className="catlog_content"><CatlogCollection/></div>
-          <div className="catlog_content"><CatlogCollection/></div>
-          <div className="catlog_content"><CatlogCollection/></div>
-
+      <div className="catlog_page">
+        <div className="catlog_content">
+          <CatlogCollection />
         </div>
-        <div className="catlog_page">
-          <div className="catlog_content"><CatlogCollection/></div>
-          <div className="catlog_content"><CatlogCollection/></div>
-          <div className="catlog_content"><CatlogCollection/></div>
-          <div className="catlog_content"><CatlogCollection/></div>
-          <div className="catlog_content"><CatlogCollection/></div>
-
-        </div>
+      </div>
       <Footer />
     </div>
   );
