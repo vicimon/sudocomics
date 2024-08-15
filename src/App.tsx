@@ -10,6 +10,7 @@ import Hqpage from "./pages/hqpage";
 import Catalogue from "./pages/catalogue";
 import Editorapage from "./pages/editorapage";
 import Userpage from "./pages/userpage";
+import Avengers from "./pages/Avengers";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/autorpage" element={<Autorpage />} />
         <Route path="/hqpage" element={<Hqpage />} />
         <Route path="/editorapage" element={<Editorapage />} />
+        <Route path="/catalogue/avengers" element={<Avengers />} />
       </Routes>
     </div>
   );

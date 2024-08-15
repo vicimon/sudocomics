@@ -313,3 +313,175 @@ h3:visited {
 .slider_item_content {
   color: white;
 }
+
+/*css pag do mangá*/
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c; /* Cor de fundo mais escura */
+}
+p{
+  user-select: none;
+}
+.background {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blur-layer {
+  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/f/60/5beda67b7e1c5/clean.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(13px); /* Adiciona o desfoque à imagem de fundo */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+
+
+.content-layer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.issue-title {
+  margin-top: 10px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.issue {
+  display: flex;
+  align-items: center;
+}
+
+.issue-cover {
+  width: 300px; /* Aumenta a imagem do quadrinho */
+  height: 450px;
+  margin-right: 20px;
+  border-radius: 20px; /* Arredonda a imagem do quadrinho */
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-box {
+  background: #2C2B44; /* Fundo mais escuro */
+  color: white; /* Texto branco para contraste */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 40px;
+  border: 2px solid yellow; /* Margem amarela */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+}
+
+.volumes-box {
+  background: #2C2B44; /* Fundo mais escuro */
+  color: white; /* Texto branco para contraste */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 40px;
+  border: 2px solid yellow; /* Margem amarela */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 570px; /* Aumenta a altura da caixa dos volumes */
+  position: absolute;
+  top: 300px;
+  right: -50px;
+  transform: translateY(-50%);
+}
+
+.volumes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.volume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.volume-cover {
+  width: 80px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.synopsis-box {
+  background: linear-gradient(to bottom, #ffeb3b, #fbc02d); /* Fundo amarelo com gradiente */
+  color: black; /* Texto preto para contraste */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para efeito 3D */
+  width: 80%; /* Estende a caixa de sinopse */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authors-box {
+  background: #2C2B44; /* Fundo mais escuro */
+  color: rgb(255, 255, 255); /* Texto branco para contraste */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 40px;
+  border: 2px solid yellow; /* Margem amarela */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 80%; /* Estende a caixa de autores */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authors-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+}
+
+.author img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
