@@ -56,7 +56,7 @@ body {
   filter: drop-shadow(0 0 50px #ff0);
 }
 
-input {
+.search-bar {
   background: url(../images/search.png);
   background-repeat: no-repeat;
   background-position: 97%;
@@ -484,4 +484,36 @@ p{
   width: 90px;
   height: 90px;
   border-radius: 50%;
+}
+
+/* CSS da Pagina de Login */
+
+.conteiner-login-fundo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteiner-login {
+  background-color: grey;
+  width: 20vw;
+  height: 50vh;
+  margin: 50px 0 90px 0;
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+  border: #ffec43 solid 5px;
+}
+
+.tittle-login{
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+
+}
+
+.text-bar-login {
+  background-color: #2C2B44;
+  height: 30px;
+  width: 80%;
+  font-size: 20px;
+  color: white;
 }

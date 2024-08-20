@@ -21,7 +21,7 @@ export default function Header() {
           </Link>
         </div>
         <div>
-          <input type="text" placeholder="Pesquisar" />
+          <input className="search-bar" type="text" placeholder="Pesquisar" />
         </div>
         <div className="head_botoes">
           <div className="head_icon">

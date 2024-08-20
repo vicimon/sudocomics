@@ -1,8 +1,11 @@
 import React from "react";
 import "./style/App.css";
 import Home from "./pages/home";
+import Login from "./pages/login";
 import { Routes, Route } from "react-router-dom";
 import Browse from "./pages/browse";
+
+import AdmLogin from "./pages/adm-login";
 
 import Autorpage from "./pages/autorpage";
 import Favorites from "./pages/favorites";
@@ -17,11 +20,13 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/admlogin" element={<AdmLogin/>} />
+
         <Route path="/browse" element={<Browse />} />
         <Route path="/catalogue" element={<Catalogue />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/userpage" element={<Userpage />} />
-
         <Route path="/autorpage" element={<Autorpage />} />
         <Route path="/hqpage" element={<Hqpage />} />
         <Route path="/editorapage" element={<Editorapage />} />
