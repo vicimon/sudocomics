@@ -72,7 +72,6 @@ body {
   outline: none;
 }
 
-input:hover,
 input:focus {
   transition: outline-color 0.6s;
   color: white;
@@ -126,8 +125,17 @@ svg {
   background-color: #0c0c0c;
   height: fit-content;
   padding: 0 50px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   user-select: none;
+  width:80vw
+
+}
+
+#car_container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
 }
 
 .car_XLsqr {
@@ -498,22 +506,26 @@ p{
 }
 
 /* CSS da Pagina de Login */
-
-.conteiner-login-fundo {
+#wrapper-login{
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .conteiner-login {
-  background-color: grey;
+  padding: 10px;
+  background-color: #0c0c0c;
+  display: flex;
+  flex-direction: column;
   width: 20vw;
   height: 50vh;
   margin: 50px 0 90px 0;
   text-align: center;
   color: white;
   border-radius: 30px;
-  border: #ffec43 solid 5px;
+  /* border: #ffec43 solid 1px; */
+  align-items: center;
 }
 
 .tittle-login{
@@ -523,8 +535,21 @@ p{
 
 .text-bar-login {
   background-color: #2C2B44;
-  height: 30px;
+  border-radius: 10px;
+  height: 40px;
   width: 80%;
   font-size: 20px;
   color: white;
+  outline: none;
+  border: none;
+  padding: 10px;
+  margin: 15px;
+}
+
+#login-button {
+  margin: 30px 0;
+  padding: 10px;
+  border-radius: 20px;
+  width: 80%;
+  border: none;
 }
