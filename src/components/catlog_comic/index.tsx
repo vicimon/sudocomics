@@ -1,17 +1,29 @@
 import { Link } from "react-router-dom";
 
-export default function CatlogComic() {
+
+type PropQuad = {
+  quad?:{
+    id?: string,
+    name?: string,
+    url?: string
+  }
+}
+
+
+export default function CatlogComic(props:PropQuad) {
+
+
+
   return (
     <div className="slider_colecao">
       <Link to="./avengers">
         <div className="slider_item">
           <img
-            className="slider_item_content"
-            src="https://s3.amazonaws.com/comicgeeks/comics/covers/large-3721276.jpg?1721844726"
+            src={props.quad?.url} /*futura prop*/
             height={150}
             alt="placeholder"
           />
-          <div className="slider_item_content">Breve descrição do quadrinho
+          <div className="slider_item_content">{props.quad?.name}
 
           </div>
       </div>

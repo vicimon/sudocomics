@@ -305,13 +305,11 @@ h3:visited {
 .slider_item {
   padding: 15px 10px 15px 10px;
   display: flex;
-  /* border: solid 1px white; */
   background-color: #1f1f2d;
   background: radial-gradient(#2c2c42 ,#0c0c0c );
   gap: 1rem;
   flex-direction: column;
   align-items: center;
-  flex: 1 1 20px;
   transition: 0.7s;
   border-radius: 25px;
 }
@@ -322,7 +320,11 @@ h3:visited {
   margin: 0 ;
 }
 .slider_item_content {
+  flex: 1;
   color: white;
+  text-align: center;
+  max-width: 500px;
+  width: 250px;
 }
 
 /*css pag do mangá*/
