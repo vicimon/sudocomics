@@ -16,7 +16,7 @@ export default function CatlogComic(props:PropQuad) {
 
   return (
     <div className="slider_colecao">
-      <Link to="./avengers">
+      <Link className="slider_item_content" to="./avengers">
         <div className="slider_item">
           <img
             src={props.quad?.url} /*futura prop*/

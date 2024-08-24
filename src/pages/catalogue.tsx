@@ -8,7 +8,7 @@ export default function Catalogue() {
     <div>
       <Header />
       <div>
-        <h1 className="titulo_catlog">CATALOGO</h1>
+        <h1 className="titulo_catlog">C ATALOGO</h1>
         <div className="catlog_page">
           <div className="catlog_content">
             <CatlogCollection />
