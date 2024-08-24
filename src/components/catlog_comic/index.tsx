@@ -20,7 +20,7 @@ export default function CatlogComic(props:PropQuad) {
         <div className="slider_item">
           <img
             src={props.quad?.url} /*futura prop*/
-            height={150}
+            height={235}
             alt="placeholder"
           />
           <div className="slider_item_content">{props.quad?.name}
