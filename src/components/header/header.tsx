@@ -24,9 +24,11 @@ export default function Header() {
           <input className="search-bar" type="text" placeholder="Pesquisar" />
         </div>
         <div className="head_botoes">
+          <Link to={"/admlogin"}>
           <div className="head_icon">
-            <FeatherIcon icon="menu" />
+            <FeatherIcon icon="user" />
           </div>
+          </Link>
         </div>
       </div>
       <Tape></Tape>

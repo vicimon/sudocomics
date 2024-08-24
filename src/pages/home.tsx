@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <div>
       <Header />
-      {/* <Tape></Tape> */}
       <div className="page_content">
         <Carousel />
         <h1>Novas HQs</h1>
