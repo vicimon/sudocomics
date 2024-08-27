@@ -572,3 +572,69 @@ p{
   width: 80%;
   border: none;
 }
+
+/* cadastro HQ Adm cadAdm */
+
+.conteiner-login-fundo {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteiner-cadastro-adm {
+  align-items: center;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 60vh;
+  margin: 50px 0 90px 0;
+  text-align: center;
+  color: white;
+  /* border: #ffec43 solid 1px; */
+  align-items: center;
+}
+
+.conteudo-cadAdm {
+  align-items: center;
+  background-color: #0c0c0c;
+  border-radius: 30px;
+  width: 95vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-bar-cadAdm {
+  text-align: center;
+  background-color: #2C2B44;
+  border-radius: 10px;
+  height: 40px;
+  width: 80%;
+  font-size: 20px;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px;
+  margin: 15px;
+}
+
+.botao-cadAdm{
+  height: 5vh;
+  width: 10vw;
+  color: white;
+  background-color: #2C2B44;
+  border-radius: 10px;
+  border: solid #fbc02d 2px;
+  transition: 0.7s;
+}
+
+.botao-cadAdm:hover {
+  height: 5.5vh;
+  width: 10.5vw;
+  color: white;
+  background-color: #2C2B44;
+  border-radius: 10px;
+  border: solid #fbc02d 4px;
+  transition: 0.7s;
+  transform: (0.5);
+}
