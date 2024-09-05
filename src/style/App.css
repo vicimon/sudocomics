@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Luckiest+Guy&display=swap');
+
+
 body {
   background-color: rgb(0, 0, 0);
   /* background: url(../../public/images/bg.webp); */
@@ -9,6 +12,7 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  font-family: "Comic Neue", cursive;
 }
 
 .content {
