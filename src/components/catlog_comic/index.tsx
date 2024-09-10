@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 type PropQuad = {
   quad?:{
     id?: string,
@@ -9,7 +8,6 @@ type PropQuad = {
   }
 }
 
-
 export default function CatlogComic(props:PropQuad) {
 
   return (
@@ -17,7 +15,7 @@ export default function CatlogComic(props:PropQuad) {
       <div className="slider_colecao">
           <div className="slider_item">
             <img
-              src={props.quad?.url} /*futura prop*/
+              src={props.quad?.url}
               height={235}
               alt="placeholder"
             />
