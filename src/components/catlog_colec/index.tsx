@@ -12,12 +12,35 @@ export default function CatlogCollection() {
   ]
 
   return (
-    <div className="slider_colecao">
+    <div >
+      <div className="slider_colecao">
+      <CatlogComic quad={ListaQuad[0]}/>
+      <CatlogComic quad={ListaQuad[4]}/>
+      <CatlogComic quad={ListaQuad[2]}/>
+      <CatlogComic quad={ListaQuad[3]}/>
+      <CatlogComic quad={ListaQuad[1]}/>
+      </div>
+      <div className="slider_colecao">
+      <CatlogComic quad={ListaQuad[3]}/>
+      <CatlogComic quad={ListaQuad[1]}/>
+      <CatlogComic quad={ListaQuad[4]}/>
+      <CatlogComic quad={ListaQuad[2]}/>
+      <CatlogComic quad={ListaQuad[0]}/>
+      </div>
+      <div className="slider_colecao">
+      <CatlogComic quad={ListaQuad[2]}/>
+      <CatlogComic quad={ListaQuad[4]}/>
+      <CatlogComic quad={ListaQuad[3]}/>
+      <CatlogComic quad={ListaQuad[0]}/>
+      <CatlogComic quad={ListaQuad[1]}/>
+      </div>
+      <div className="slider_colecao">
       <CatlogComic quad={ListaQuad[0]}/>
       <CatlogComic quad={ListaQuad[1]}/>
       <CatlogComic quad={ListaQuad[2]}/>
       <CatlogComic quad={ListaQuad[3]}/>
       <CatlogComic quad={ListaQuad[4]}/>
+      </div>
     </div>
   );
 }
