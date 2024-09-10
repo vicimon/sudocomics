@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Browse from "./pages/browse";
 
 import AdmLogin from "./pages/adm-login";
+import CadAdm from "./pages/cadAdm";
 
 import Autorpage from "./pages/autorpage";
 import Favorites from "./pages/favorites";
@@ -15,6 +16,7 @@ import Editorapage from "./pages/editorapage";
 import Userpage from "./pages/userpage";
 import Avengers from "./pages/Avengers";
 
+
 function App() {
   return (
     <div className="App">
@@ -22,6 +24,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login/>} />
         <Route path="/admlogin" element={<AdmLogin/>} />
+        <Route path="/cadadm" element={<CadAdm/>} />
 
         <Route path="/browse" element={<Browse />} />
         <Route path="/catalogue" element={<Catalogue />} />
