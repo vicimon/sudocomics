@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Browse from "./pages/browse";
 
 import AdmLogin from "./pages/adm-login";
-import CadAdm from "./pages/cadAdm";
+import CadHq from "./pages/Hqcad";
 
 import Autorpage from "./pages/autorpage";
 import Favorites from "./pages/favorites";
@@ -24,7 +24,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login/>} />
         <Route path="/admlogin" element={<AdmLogin/>} />
-        <Route path="/cadadm" element={<CadAdm/>} />
+        <Route path="/cadHq" element={<CadHq/>} />
 
         <Route path="/browse" element={<Browse />} />
         <Route path="/catalogue" element={<Catalogue />} />
