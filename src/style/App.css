@@ -283,20 +283,6 @@ h3:visited {
   text-align: center;
 }
 
-/* Estilo Catalogo/coleção */
-
-.catlog_page {
-  display: flex;
-}
-.titulo_catlog{
-  font-style: italic;
-  color: black;
-  text-align: center;
-  background: #fbc02d;
-  padding: 20px;
-  background-color: #0c0c0c;
-}
-
 /*css pag do mangá*/
 body, html {
   margin: 0;
