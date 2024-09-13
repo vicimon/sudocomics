@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Browse from "./pages/browse";
 
 import AdmLogin from "./pages/adm-login";
+import AdmCadastro from "./pages/adm-cadastro";
 import CadHq from "./pages/Hqcad";
 
 import Autorpage from "./pages/autorpage";
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/cadastro" element={<AdmCadastro/>}></Route>
         <Route path="/admlogin" element={<AdmLogin/>} />
         <Route path="/cadHq" element={<CadHq/>} />
 

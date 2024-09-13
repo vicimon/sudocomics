@@ -8,9 +8,9 @@ import { moduleApi } from "../Api";
 export default function CadHq() {
 
   /*Adição de conteúdo */
-  const[addQuadrinho,setaddQuadrinho]=useState('');
-  const[addEditora,setaddEditora]=useState('');
-  const[addAutor,setaddAutor]=useState('');
+  const[quadrinho,setQuadrinho]=useState('');
+  const[editora,setEditora]=useState('');
+  const[autor,setAutor]=useState('');
 
   // /*Funções*/ tentei fazer aqui mas esqueci de subir a aula do paulo pro meu git e fiquei sem saber como continuar(Viniwonk)
   // const criaQuadrinho = async () => {
@@ -30,7 +30,7 @@ export default function CadHq() {
             <input className="text-bar-cadAdm"  type="text" placeholder="Editora"/>
             <input className="text-bar-cadAdm"  type="text" placeholder="Imagen"/>
         
-            <button className="botao-cadAdm" onClick={/*criaQuadrinho*/}>Entregar</button>
+            <button className="botao-cadAdm" /*onClick={criaQuadrinho}*/>Entregar</button>
         </div>
       </div>
       <Footer></Footer>
