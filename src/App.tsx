@@ -35,7 +35,7 @@ function App() {
         <Route path="/autorpage" element={<Autorpage />} />
         <Route path="/hqpage" element={<Hqpage />} />
         <Route path="/editorapage" element={<Editorapage />} />
-        <Route path="/catalogue/avengers" element={<Avengers />} />
+        <Route path="/catalogue/:id" element={<Avengers />} />
       </Routes>
     </div>
   );

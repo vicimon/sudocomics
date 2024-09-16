@@ -283,6 +283,11 @@ h3:visited {
   text-align: center;
 }
 
+.home_row{
+  display: flex;
+  gap: 1rem;
+}
+
 /*css pag do mangá*/
 body, html {
   margin: 0;

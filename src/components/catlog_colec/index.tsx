@@ -1,5 +1,5 @@
 import CatlogComic from "../catlog_comic";
-
+import { Link } from "react-router-dom";
 
 export default function CatlogCollection() {
 
@@ -12,34 +12,20 @@ export default function CatlogCollection() {
   ]
 
   return (
-    <div >
-      <div className="slider_colecao">
-      <CatlogComic quad={ListaQuad[0]}/>
-      <CatlogComic quad={ListaQuad[4]}/>
-      <CatlogComic quad={ListaQuad[2]}/>
-      <CatlogComic quad={ListaQuad[3]}/>
-      <CatlogComic quad={ListaQuad[1]}/>
-      </div>
-      <div className="slider_colecao">
-      <CatlogComic quad={ListaQuad[3]}/>
-      <CatlogComic quad={ListaQuad[1]}/>
-      <CatlogComic quad={ListaQuad[4]}/>
-      <CatlogComic quad={ListaQuad[2]}/>
-      <CatlogComic quad={ListaQuad[0]}/>
-      </div>
-      <div className="slider_colecao">
-      <CatlogComic quad={ListaQuad[2]}/>
-      <CatlogComic quad={ListaQuad[4]}/>
-      <CatlogComic quad={ListaQuad[3]}/>
-      <CatlogComic quad={ListaQuad[0]}/>
-      <CatlogComic quad={ListaQuad[1]}/>
-      </div>
-      <div className="slider_colecao">
-      <CatlogComic quad={ListaQuad[0]}/>
-      <CatlogComic quad={ListaQuad[1]}/>
-      <CatlogComic quad={ListaQuad[2]}/>
-      <CatlogComic quad={ListaQuad[3]}/>
-      <CatlogComic quad={ListaQuad[4]}/>
+    <div>
+      <div className="slider_map">
+          {ListaQuad.map((item,index) => (
+            <Link to={"catalogue/"+item.id}>
+            <div key={index} className="slider_item">
+              <img
+                src={item.url}
+                height={235}
+                alt="placeholder"
+                />
+              <div className="slider_item_content">{item.name}</div>
+          </div>
+            </Link>
+          ))}
       </div>
     </div>
   );
