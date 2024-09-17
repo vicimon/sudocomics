@@ -8,30 +8,60 @@ import { moduleApi } from "../Api";
 export default function CadHq() {
 
   /*Adição de conteúdo */
-  const[quadrinho,setQuadrinho]=useState('');
+  const[vol,setVol]=useState('');
   const[editora,setEditora]=useState('');
-  const[autor,setAutor]=useState('');
+  const[colecao,setColecao]=useState('');
+  const[imagem,setImagem]=useState('');
+  const[usuario,setUsuario]=useState('');
+  const[lancamento,setLancamento]=useState('');
 
-  // /*Funções*/ tentei fazer aqui mas esqueci de subir a aula do paulo pro meu git e fiquei sem saber como continuar(Viniwonk)
-  // const criaQuadrinho = async () => {
-  //   let response = await moduleApi.json(); 
-  // }
+  // *Funções*
+  const cadVol = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setVol(event.target.value);
+  }
+  const cadLancamento = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setLancamento(event.target.value);
+  }
+  const cadEditora = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEditora(event.target.value);
+  }
+  const cadColecao = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setColecao(event.target.value);
+  }
+  const cadImagem = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setImagem(event.target.value);
+  }
+  const cadUsuario = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setUsuario(event.target.value);
+  }
+// Api
 
-  return (
+const addQuadrinho = async() =>{
+  let json = await moduleApi.adicionarQuadrinho(vol,colecao,lancamento,imagem,editora,usuario)
+  
+  if (json.id) {
+    alert("Quadrinho inserido")
+  } else {
+    alert("Erro ao inserir quadrinho")
+  }
+
+}
+    return (
     <div className="conteiner-login-fundo">
       <Header></Header>
       <div className="conteiner-cadastro-adm">
-        <div className="conteudo-cadAdm">
+        <form className="conteudo-cadAdm">
             <h1>Cadastro HQ</h1>
-            <input className="text-bar-cadAdm"  type="text" placeholder="Nome da HQ"/>
-            <input className="text-bar-cadAdm"  type="text" placeholder="Vol."/>
-            <input className="text-bar-cadAdm"  type="text" placeholder="coleção"/>
+            <input className="text-bar-cadAdm"  type="text" placeholder="Nome da HQ" onChange={cadColecao}/>
+            <input className="text-bar-cadAdm"  type="text" placeholder="Vol." onChange={cadVol}/>
+            <input className="text-bar-cadAdm"  type="text" placeholder="Lnaçamento" onChange={cadLancamento}/>
             <input className="text-bar-cadAdm"  type="text" placeholder="Autor"/>
-            <input className="text-bar-cadAdm"  type="text" placeholder="Editora"/>
-            <input className="text-bar-cadAdm"  type="text" placeholder="Imagen"/>
+            <input className="text-bar-cadAdm"  type="text" placeholder="Editora" onChange={cadEditora}/>
+            <input className="text-bar-cadAdm"  type="text" placeholder="Imagem" onChange={cadImagem}/>
+            <input className="text-bar-cadAdm"  type="text" placeholder="Usuario" onChange={cadUsuario}/>
         
-            <button className="botao-cadAdm" /*onClick={criaQuadrinho}*/>Entregar</button>
-        </div>
+            <button className="botao-cadAdm" onClick={addQuadrinho}>Entregar</button>
+        </form>
       </div>
       <Footer></Footer>
     </div>
