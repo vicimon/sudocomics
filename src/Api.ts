@@ -33,8 +33,8 @@ export const moduleApi ={
             colecao,
             lancamento,
             imagemCapa,
-            uploadedBy,
             editora,
+            uploadedBy,
         }),
         headers:{'Content-Type':'application/json'}
     })
