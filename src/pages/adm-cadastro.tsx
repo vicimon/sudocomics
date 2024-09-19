@@ -2,13 +2,15 @@ import Header from "../components/header/header"
 import Footer from "../components/footer"
 import { Link } from "react-router-dom"
 import React, { useState } from "react"
+import { moduleApi } from "../Api";
 
 export default function AdmCadastro(){
-
+    // **Criação de Usuário**
     const [usuario,setUsuario] = useState("");
     const [email,setEmail] = useState("");
     const [senha,setSenha] = useState("");
 
+    // **Funções de criação**
     const changeUsuario = (event: React.ChangeEvent<HTMLInputElement>) => {
         setUsuario(event.target.value);
     }
@@ -19,9 +21,15 @@ export default function AdmCadastro(){
         setSenha(event.target.value);
     }
     
-    const submitHandler = () => {
-        
-    }
+    // **API**
+    const submitHandler = async() => {
+        let json = await moduleApi.adcionarAdmin(usuario,email,senha)
+        if (json.vol) {
+            alert("Criação bem sucedida")
+          } else {
+            alert("Erro ao criar a conta")
+          }
+        }
 
     return(
         <div>
@@ -35,7 +43,7 @@ export default function AdmCadastro(){
                     <input className="text-bar-login"  type="Email" placeholder="Email" onChange={changeEmail}/>
                     <p>Senha</p>
                     <input className="text-bar-login"  type="Password" placeholder="Senha" onChange={changeSenha}/>
-                    <button id="login-button" type="submit"> Cadastrar </button>
+                    <button id="login-button" type="submit" onClick={submitHandler}> Cadastrar </button>
                     <Link to="/admlogin">Fazer Login</Link>
                 </div>
             </div>

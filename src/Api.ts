@@ -121,7 +121,7 @@ export const moduleApi ={
         return json
     },
 
-    /*Admin DM*/ //FALTA O RESTO DO DM(LOGIN)
+    /*Admin DM*/
     adcionarAdmin:async(nome:string,email:string,senha:string) =>{
         let response = await fetch ('',{
         method:'POST',
@@ -136,5 +136,17 @@ export const moduleApi ={
     console.log(json);
     return json;
 },
-
+    loginAdmin:async(email:string,senha:string) =>{
+        let response = await fetch ('',{
+            method:'POST',
+            body:JSON.stringify({
+                email,
+                senha,
+                }),
+                headers:{'Content-Type':'application/json'}
+        })
+        let json = await response.json();
+    console.log(json);
+    return json;
+    }
 }
