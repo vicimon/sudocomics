@@ -25,7 +25,7 @@ export default function AdmCadastro(){
     const submitHandler = async() => {
         let json = await moduleApi.adcionarAdmin(usuario,email,senha)
         if (json.vol) {
-            alert("Criação bem sucedida")
+            alert("Criação bem suscedida")
           } else {
             alert("Erro ao criar a conta")
           }
@@ -35,13 +35,13 @@ export default function AdmCadastro(){
         <div>
         <Header></Header>
             <div id="wrapper-login">
-                <div className="conteiner-login">
-                    <h1 className="tittle-login">Cadastro de ADM</h1>
-                    <p>Usuário</p>
+                <div className="conteiner-loginADM">
+                    <h1 className="tittle-login">Cadastro de ADM</h1><br />
+                    {/* <p>Usuário</p> */}
                     <input className="text-bar-login"  type="text" placeholder="Usuário" onChange={changeUsuario}/>
-                    <p>Email</p>
+                    {/* <p>Email</p> */}
                     <input className="text-bar-login"  type="Email" placeholder="Email" onChange={changeEmail}/>
-                    <p>Senha</p>
+                    {/* <p>Senha</p> */}
                     <input className="text-bar-login"  type="Password" placeholder="Senha" onChange={changeSenha}/>
                     <button id="login-button" type="submit" onClick={submitHandler}> Cadastrar </button>
                     <Link to="/admlogin">Fazer Login</Link>

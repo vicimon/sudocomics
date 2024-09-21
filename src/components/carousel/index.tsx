@@ -13,7 +13,7 @@ export default function Carousel() {
         <span>
           <img id="principal" src={Carousel01} alt="" />
         </span>
-        <Link to="/hqpage" className="car_Links"></Link>
+        <Link to="/catalogue/:id" className="car_Links"></Link>
       </div>
       <div className="car_Ssqrs">
         <div className="car_Ssqr">

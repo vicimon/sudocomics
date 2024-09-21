@@ -33,7 +33,7 @@ function App() {
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/userpage" element={<Userpage />} />
         <Route path="/autorpage" element={<Autorpage />} />
-        <Route path="/hqpage" element={<Hqpage />} />
+        {/* <Route path="/hqpage" element={<Hqpage />} /> */}
         <Route path="/editorapage" element={<Editorapage />} />
         <Route path="/catalogue/:id" element={<Avengers />} />
       </Routes>

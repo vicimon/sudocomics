@@ -34,10 +34,10 @@ export default function AdmLogin() {
       <Header></Header>
       <div id="wrapper-login">
         <div className="conteiner-login">
-          <h1 className="tittle-login">ADM Login</h1>
-          <p>Email</p>
+          <h1 className="tittle-login">ADM Login</h1><br />
+          {/* <p>Email</p> */}
           <input className="text-bar-login"  type="Email" placeholder="Email/Usuario" onChange={loginEmail}/>
-          <p>Senha</p>
+          {/* <p>Senha</p> */}
           <input className="text-bar-login"  type="Password" placeholder="Senha" onChange={loginSenha}/>
           <button id="login-button" type="submit" onClick={addQuadrinho}> Login </button>
           <Link to="/cadastro">Cadastrar</Link>
