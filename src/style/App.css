@@ -5,7 +5,7 @@ body {
   background-color: rgb(0, 0, 0);
   /* background: url(../../public/images/bg.webp); */
   background-size: 100%;
-  height: 100%;
+  height: 300vh;
   min-height: 100%;
   width: 100vw;
   margin: 0;
@@ -209,6 +209,7 @@ svg {
   flex-direction: column;
   flex: 1;
   gap: 1rem;
+  z-index: 10;
   /* height: 100px; */
   /* padding-bottom: 20px; */
 }
@@ -279,7 +280,7 @@ h3:visited {
   flex-direction: column;
   justify-content: center;
   color: white;
-  background-color: #0c0c0c;
+  /* background-color: #0c0c0c; */
   text-align: center;
 }
 
@@ -293,7 +294,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #1c1c1c; /* Cor de fundo mais escura */
+  /* background-color: #1c1c1c; Cor de fundo mais escura */
 }
 p{
   user-select: none;
@@ -315,7 +316,7 @@ p{
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: -1;
 }
 
 
@@ -459,6 +460,139 @@ p{
   border-radius: 50%;
 }
 
+.main-content {
+  padding: 20px;
+}
+
+.comic-title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.layout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100vw;
+  padding: 0 6rem;
+}
+
+.comic-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.info-author-container {
+  display: flex;
+  flex-direction: column;
+  gap: 150px; /* altura da box de autores */
+  width: 100%;
+}
+
+.info-box{
+  background: #2C2B44; /* Fundo mais escuro */
+    color: rgb(255, 255, 255); /* Texto branco para contraste */
+    padding: 20px;
+    border-radius: 40px;
+    border: 2px solid yellow; /* Margem amarela */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 40%; /* Estende a caixa de autores */
+    display: flex; 
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.authors-box {
+    background: #2C2B44; /* Fundo mais escuro */
+    color: rgb(255, 255, 255); /* Texto branco para contraste */
+    margin: 10px;
+    border-radius: 40px;
+    border: 2px solid yellow; /* Margem amarela */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    display: flex; 
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.authors-container {
+  display: flex;
+  gap: 5px;
+}
+
+.author img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid yellow; /* Margem amarela */
+  border-radius: 50%;
+}
+
+
+
+.collections-box {
+  color: white;
+  width: 650px;
+  background-color: #2C2B44;
+  border: 2px solid yellow; /* Margem amarela */
+  border-radius: 10px;
+  max-height: 470px;
+  overflow-y: auto;
+}
+
+.collections-title{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.collections-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.collection-item{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+
+}
+
+.collection-item img {
+  width: 90px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.collection-item p {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Estiliza a barra de rolagem no Webkit*/
+.collections-box::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+.collections-box::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Cor de fundo da barra de rolagem */
+}
+
+.collections-box::-webkit-scrollbar-thumb {
+  background-color: yellow; /* Cor da parte rolável */
+  border-radius: 10px; /* Bordas arredondadas da barra */
+}
+
+.collections-box::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cor ao passar o mouse */
+}
+
 /* CSS da Pagina de Login */
 #wrapper-login{
   width: 100vw;
@@ -573,3 +707,69 @@ p{
   transition: 0.7s;
   transform: (0.5);
 }
+
+/* css editora marvel */
+
+.editorapage {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('https://opinioescertificadas.com.br/wp-content/uploads/2020/10/melhores-quadrinhos-da-marvel.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  padding: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fundo escurecido */
+  z-index: 0;
+}
+
+.editor-logo {
+  max-width: 300px; /* Tamanho da logo */
+  margin-bottom: 40px;
+  z-index: 1; /* Para estar acima da overlay */
+}
+
+.bio {
+  background: rgba(255, 255, 255, 0.3); /* Balão para a bio */
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px auto; /* Centraliza o balão */
+  z-index: 1; /* Para estar acima da overlay */
+  text-align: center; /* Centraliza o texto */
+  max-width: 1300px; /* Limita a largura do balão */
+}
+
+.creators {
+  z-index: 1; /* Para estar acima da overlay */
+  text-align: center;
+  color: white; /* Cor da fonte dos criadores */
+  font-family: Arial, sans-serif; /* Fonte Arial */
+}
+
+.creator-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaço entre as imagens */
+  margin-top: 10px;
+}
+
+.creator-img {
+  width: 120px; /* Tamanho das imagens dos autores */
+  height: 120px;
+  border-radius: 50%; /* Imagens arredondadas */
+  border: 2px solid white; /* Borda branca */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Sombra leve */
+}
+
+
+/* css editora dc */

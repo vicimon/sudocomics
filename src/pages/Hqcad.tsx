@@ -99,7 +99,7 @@ export default function CadHq() {
                 <input className="text-bar-cadAdm"  type="text" placeholder="Imagem" onChange={altImagem}/>
                 <input className="text-bar-cadAdm"  type="text" placeholder="Usuário" onChange={altUsuario}/>
             
-                <button className="botao-cadAdm" onClick={altQuadrinho}>Alterar</button>
+                <button onClick={altQuadrinho}>Alterar Quadrinho</button>
             </form>
           </div>
         <Footer></Footer>
