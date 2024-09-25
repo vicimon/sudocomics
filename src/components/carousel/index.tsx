@@ -7,17 +7,14 @@ import { Link } from "react-router-dom";
 
 export default function Carousel() {
   return (
+    <div>
     <div id="car_container">
     <div id="car_wrapper">
       <div className="car_XLsqr">
         <span>
           <img id="principal" src={Carousel01} alt="" />
         </span>
-        <Link to="/Avengers" className="car_Links"></Link>
       </div>
-      <div className="car_Ssqrs">
-        <div className="car_Ssqr">
-          <span>
             <img src={Marvel} alt="" />
           </span>
           <Link to="/editorapage/marvel" className="car_bannerLinkS"></Link>
@@ -32,5 +29,7 @@ export default function Carousel() {
     </div>
       <Tape></Tape>
     </div>
+    </div>
+    
   );
 }

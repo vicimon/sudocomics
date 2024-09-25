@@ -607,7 +607,7 @@ p{
   display: flex;
   flex-direction: column;
   width: 20vw;
-  height: 60vh;
+  height: 45vh;
   margin: 50px 0 90px 0;
   text-align: center;
   color: white;
@@ -661,6 +661,21 @@ p{
   color: white;
   /* border: #ffec43 solid 1px; */
   align-items: center;
+}
+.conteiner-loginADM{
+  padding: 10px;
+  background-color: #0c0c0c;
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 53vh;
+  margin: 50px 0 90px 0;
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+  /* border: #ffec43 solid 1px; */
+  align-items: center;
+
 }
 
 .conteudo-cadAdm {

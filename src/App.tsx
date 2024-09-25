@@ -10,11 +10,11 @@ import AdmCadastro from "./pages/adm-cadastro";
 import CadHq from "./pages/Hqcad";
 import Autorpage from "./pages/autorpage";
 import Favorites from "./pages/favorites";
-import Hqpage from "./pages/hqpage";
+
 import Catalogue from "./pages/catalogue";
 import Editorapage from "./pages/editorapage";
 import Userpage from "./pages/userpage";
-import Avengers from "./pages/Avengers";
+
 import ComicPage from "./pages/comicpage";
 
 // Componente para página 404
@@ -35,8 +35,7 @@ function App() {
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/userpage" element={<Userpage />} />
         <Route path="/autorpage" element={<Autorpage />} />
-        <Route path="/hqpage" element={<Hqpage />} />
-        <Route path="/Avengers" element={<Avengers />} />
+
         <Route path="/editorapage" element={<Editorapage />} />
         <Route path="/catalogue/:id" element={<ComicPage />} />
         <Route path="/editorapage/:editora" element={<Editorapage/>} />
