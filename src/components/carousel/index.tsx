@@ -7,29 +7,33 @@ import { Link } from "react-router-dom";
 
 export default function Carousel() {
   return (
-    <div>
     <div id="car_container">
-    <div id="car_wrapper">
-      <div className="car_XLsqr">
-        <span>
-          <img id="principal" src={Carousel01} alt="" />
-        </span>
-      </div>
-            <img src={Marvel} alt="" />
-          </span>
-          <Link to="/editorapage/marvel" className="car_bannerLinkS"></Link>
-        </div>
-        <div className="car_Ssqr">
+      <div id="car_wrapper">
+        <div className="car_XLsqr">
           <span>
-            <img src={DC} alt="" />
+            <img id="principal" src={Carousel01} alt="" />
           </span>
-          <Link to="/editorapage/dc_comics" className="car_bannerLinkS"></Link>
+          <Link to="/catalogue/:id" className="car_Links"></Link>
+        </div>
+        <div className="car_Ssqrs">
+          <div className="car_Ssqr">
+            <span>
+              <img src={Marvel} alt="" />
+            </span>
+            <Link to="/editorapage/marvel" className="car_bannerLinkS"></Link>
+          </div>
+          <div className="car_Ssqr">
+            <span>
+              <img src={DC} alt="" />
+            </span>
+            <Link
+              to="/editorapage/dc_comics"
+              className="car_bannerLinkS"
+            ></Link>
+          </div>
         </div>
       </div>
-    </div>
       <Tape></Tape>
     </div>
-    </div>
-    
   );
 }

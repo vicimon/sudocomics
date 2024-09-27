@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Luckiest+Guy&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Luckiest+Guy&display=swap");
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #0c0c0c;
   /* background: url(../../public/images/bg.webp); */
   background-size: 100%;
   height: 300vh;
@@ -31,7 +30,7 @@ body {
   z-index: 10;
   display: flex;
   flex-direction: column;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
 }
 
@@ -131,8 +130,7 @@ svg {
   padding: 0 50px;
   /* padding-bottom: 30px; */
   user-select: none;
-  width:80vw
-
+  width: 80vw;
 }
 
 #car_container {
@@ -284,19 +282,20 @@ h3:visited {
   text-align: center;
 }
 
-.home_row{
+.home_row {
   display: flex;
   gap: 1rem;
 }
 
 /*css pag do mangá*/
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
   /* background-color: #1c1c1c; Cor de fundo mais escura */
 }
-p{
+p {
   user-select: none;
 }
 .background {
@@ -307,7 +306,7 @@ p{
 }
 
 .blur-layer {
-  background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/f/60/5beda67b7e1c5/clean.jpg');
+  background-image: url("https://cdn.marvel.com/u/prod/marvel/i/mg/f/60/5beda67b7e1c5/clean.jpg");
   background-size: cover;
   background-position: center;
   filter: blur(13px); /* Adiciona o desfoque à imagem de fundo */
@@ -318,8 +317,6 @@ p{
   bottom: 0;
   z-index: -1;
 }
-
-
 
 .content-layer {
   position: relative;
@@ -367,7 +364,7 @@ p{
 }
 
 .info-box {
-  background: #2C2B44; /* Fundo mais escuro */
+  background: #2c2b44; /* Fundo mais escuro */
   color: white; /* Texto branco para contraste */
   padding: 20px;
   margin: 10px;
@@ -378,7 +375,7 @@ p{
 }
 
 .volumes-box {
-  background: #2C2B44; /* Fundo mais escuro */
+  background: #2c2b44; /* Fundo mais escuro */
   color: white; /* Texto branco para contraste */
   padding: 20px;
   margin: 10px;
@@ -414,7 +411,11 @@ p{
 }
 
 .synopsis-box {
-  background: linear-gradient(to bottom, #ffeb3b, #fbc02d); /* Fundo amarelo com gradiente */
+  background: linear-gradient(
+    to bottom,
+    #ffeb3b,
+    #fbc02d
+  ); /* Fundo amarelo com gradiente */
   color: black; /* Texto preto para contraste */
   padding: 20px;
   margin: 10px;
@@ -427,7 +428,7 @@ p{
 }
 
 .authors-box {
-  background: #2C2B44; /* Fundo mais escuro */
+  background: #2c2b44; /* Fundo mais escuro */
   color: rgb(255, 255, 255); /* Texto branco para contraste */
   padding: 20px;
   margin: 10px;
@@ -491,32 +492,31 @@ p{
   width: 100%;
 }
 
-.info-box{
-  background: #2C2B44; /* Fundo mais escuro */
-    color: rgb(255, 255, 255); /* Texto branco para contraste */
-    padding: 20px;
-    border-radius: 40px;
-    border: 2px solid yellow; /* Margem amarela */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 40%; /* Estende a caixa de autores */
-    display: flex; 
-    flex-direction: column;
-    border-radius: 10px;
+.info-box {
+  background: #2c2b44; /* Fundo mais escuro */
+  color: rgb(255, 255, 255); /* Texto branco para contraste */
+  padding: 20px;
+  border-radius: 40px;
+  border: 2px solid yellow; /* Margem amarela */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 40%; /* Estende a caixa de autores */
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
 }
 
 .authors-box {
-    background: #2C2B44; /* Fundo mais escuro */
-    color: rgb(255, 255, 255); /* Texto branco para contraste */
-    margin: 10px;
-    border-radius: 40px;
-    border: 2px solid yellow; /* Margem amarela */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 60%;
-    display: flex; 
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 10px;
-
+  background: #2c2b44; /* Fundo mais escuro */
+  color: rgb(255, 255, 255); /* Texto branco para contraste */
+  margin: 10px;
+  border-radius: 40px;
+  border: 2px solid yellow; /* Margem amarela */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .authors-container {
@@ -531,19 +531,17 @@ p{
   border-radius: 50%;
 }
 
-
-
 .collections-box {
   color: white;
   width: 650px;
-  background-color: #2C2B44;
+  background-color: #2c2b44;
   border: 2px solid yellow; /* Margem amarela */
   border-radius: 10px;
   max-height: 470px;
   overflow-y: auto;
 }
 
-.collections-title{
+.collections-title {
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -555,11 +553,10 @@ p{
   gap: 10px;
 }
 
-.collection-item{
+.collection-item {
   padding: 20px;
   display: flex;
   align-items: center;
-
 }
 
 .collection-item img {
@@ -594,38 +591,82 @@ p{
 }
 
 /* CSS da Pagina de Login */
-#wrapper-login{
-  width: 100vw;
+.login-page {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  height: 100vh;
 }
 
-.conteiner-login {
-  padding: 10px;
-  background-color: #0c0c0c;
+#wrapper-login {
+  width: 90vw;
   display: flex;
-  flex-direction: column;
-  width: 20vw;
-  height: 45vh;
-  margin: 50px 0 90px 0;
-  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   color: white;
+  background-color: #000000;
   border-radius: 30px;
-  /* border: #ffec43 solid 1px; */
+}
+
+.left-side {
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  flex: 2;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f3f386;
+  border-radius: 30px 0 0 30px;
+}
+
+.cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  gap: 1rem;
+}
+
+.cadastroLink {
+  color: white;
+  background-color: black;
+  font-size: 32px;
+  /* border: solid */
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.right-side {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #fbc02d; */
+}
+
+.form-login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.tittle-login{
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-
+.title-login {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
 .text-bar-login {
-  background-color: #2C2B44;
+  background-color: #2c2b44;
   border-radius: 10px;
-  height: 40px;
-  width: 80%;
+  height: 50px;
+  width: 60%;
   font-size: 20px;
   color: white;
   outline: none;
@@ -635,11 +676,14 @@ p{
 }
 
 #login-button {
-  margin: 30px 0;
+  margin: 15px 0;
   padding: 10px;
-  border-radius: 20px;
-  width: 80%;
+  border-radius: 10px;
+  width: 60%;
+  height: 12%;
   border: none;
+  background-color: #f3f386;
+  cursor: pointer;
 }
 
 /* cadastro HQ Adm cadAdm */
@@ -662,7 +706,7 @@ p{
   /* border: #ffec43 solid 1px; */
   align-items: center;
 }
-.conteiner-loginADM{
+.conteiner-loginADM {
   padding: 10px;
   background-color: #0c0c0c;
   display: flex;
@@ -675,7 +719,6 @@ p{
   border-radius: 30px;
   /* border: #ffec43 solid 1px; */
   align-items: center;
-
 }
 
 .conteudo-cadAdm {
@@ -690,7 +733,7 @@ p{
 
 .text-bar-cadAdm {
   text-align: center;
-  background-color: #2C2B44;
+  background-color: #2c2b44;
   border-radius: 10px;
   height: 40px;
   width: 80%;
@@ -702,11 +745,11 @@ p{
   margin: 15px;
 }
 
-.botao-cadAdm{
+.botao-cadAdm {
   height: 5vh;
   width: 10vw;
   color: white;
-  background-color: #2C2B44;
+  background-color: #2c2b44;
   border-radius: 10px;
   border: solid #fbc02d 2px;
   transition: 0.7s;
@@ -716,7 +759,7 @@ p{
   height: 5.5vh;
   width: 10.5vw;
   color: white;
-  background-color: #2C2B44;
+  background-color: #2c2b44;
   border-radius: 10px;
   border: solid #fbc02d 4px;
   transition: 0.7s;
@@ -727,15 +770,16 @@ p{
 
 .editorapage {
   position: relative;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url('https://opinioescertificadas.com.br/wp-content/uploads/2020/10/melhores-quadrinhos-da-marvel.jpg') no-repeat center center fixed;
+  background: url("https://opinioescertificadas.com.br/wp-content/uploads/2020/10/melhores-quadrinhos-da-marvel.jpg")
+    no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
-  padding: auto;
+  padding: 20px;
 }
 
 .overlay {
@@ -785,6 +829,5 @@ p{
   border: 2px solid white; /* Borda branca */
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Sombra leve */
 }
-
 
 /* css editora dc */
